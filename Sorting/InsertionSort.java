@@ -22,20 +22,20 @@ public class InsertionSort {
 
     }
 
-    public static void insertionSort(int[] arr) {
-        for(int i=1;i<arr.length;i++){
-            int curr = arr[i];
-            int prev = i-1;
+    // public static void insertionSort(int[] arr) {
+    //     for(int i=1;i<arr.length;i++){
+    //         int curr = arr[i];
+    //         int prev = i-1;
 
-            //finding out the correct pos to insert
-            while(prev>=0 && arr[prev]>curr){
-                arr[prev+1] = arr[prev];
-                prev--;
-            }
-            //inserting the element at the correct position
+    //         //finding out the correct pos to insert
+    //         while(prev>=0 && arr[prev]>curr){
+    //             arr[prev+1] = arr[prev];
+    //             prev--;
+    //         }
+    //         //inserting the element at the correct position
 
-            arr[prev+1] = arr[curr];
-        }
-    }
+    //         arr[prev+1] = arr[curr];
+    //     }
+    // }
     
 }
