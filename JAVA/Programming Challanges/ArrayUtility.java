@@ -35,7 +35,7 @@ public class ArrayUtility {
             i++;
         }
         return numArray;
-    }
+    } 
 
     public static void displayArray(int[] numArray) {
         int i = 0;
@@ -45,4 +45,6 @@ public class ArrayUtility {
         }
         System.out.println();
     }
+
+    
 }
