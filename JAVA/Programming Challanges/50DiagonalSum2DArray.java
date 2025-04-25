@@ -64,10 +64,7 @@ class DiagonalSum2DArray {
         return numArray;
     }
     
-    
 
-
-    System.out.println("DTHDFY");
 }
 
 
