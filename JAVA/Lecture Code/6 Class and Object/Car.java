@@ -15,6 +15,7 @@ public class Car {
         }
         else if(currentFuelInLiters < 5){
             System.out.println("Car is low on fuel, please refuel soon");
+            currentFuelInLiters--;
         }
         else{
             System.out.println("Car is driving");
