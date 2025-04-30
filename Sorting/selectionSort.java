@@ -1,3 +1,12 @@
+// Time complexities of selection sort is O(n^2) in all cases (best, average, worst)
+// Space complexity is O(1) as it only requires a constant amount of additional space
+// Selection sort is not a stable sort, as it may change the relative order of equal elements
+// Selection sort is an in-place sorting algorithm, meaning it does not require any additional storage space for sorting the array
+// Selection sort is not a comparison-based sorting algorithm, as it does not compare elements directly to determine their order
+// Selection sort is a simple sorting algorithm that divides the input array into two parts: sorted and unsorted
+
+
+
 import java.util.Arrays;
 
 public class selectionSort {
