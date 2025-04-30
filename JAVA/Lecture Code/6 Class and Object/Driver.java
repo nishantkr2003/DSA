@@ -17,8 +17,7 @@ public class Driver {
         myCar.drive();
         myCar.addFuel(3);
         myCar.drive();
-        myCar.drive();
-       
+        myCar.drive();      
         System.out.println(myCar.getCurrentFuelLevel());
     }
 }
