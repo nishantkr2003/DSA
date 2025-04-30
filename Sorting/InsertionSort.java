@@ -1,4 +1,9 @@
-package Sorting;
+// Insertion Sort in Java
+// Time Complexity: O(n^2) in worst case, O(n) in best case
+// Space Complexity: O(1) as it only requires a constant amount of additional space
+// Stable: Yes, as it maintains the relative order of equal elements
+// In-place: Yes, as it does not require any additional storage space for sorting the array
+// Comparison-based: Yes, as it compares elements to determine their order
 import java.util.*;
 
 public class InsertionSort {
