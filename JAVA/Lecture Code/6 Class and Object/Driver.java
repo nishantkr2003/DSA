@@ -9,15 +9,22 @@ public class Driver {
 
 
         // Creates an object of Car
-        Car myCar = new Car();
-        // Calls the drive method of the Car class
-        myCar.addFuel(6);
-        myCar.drive();
-        myCar.drive();
-        myCar.drive();
-        myCar.addFuel(3);
-        myCar.drive();
-        myCar.drive();      
-        System.out.println(myCar.getCurrentFuelLevel());
+        // Car myCar = new Car();
+        // // Calls the drive method of the Car class
+        // myCar.addFuel(6);
+        // myCar.drive();
+        // myCar.drive();
+        // myCar.drive();
+        // myCar.addFuel(3);
+        // myCar.drive();
+        // myCar.drive();      
+        // System.out.println(myCar.getCurrentFuelLevel());
+
+        Car bmw = new Car();
+        bmw.addFuel(6);
+        Car StartedCar = bmw.start();
+        StartedCar.drive();
+
+
     }
 }

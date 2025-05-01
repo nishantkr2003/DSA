@@ -9,18 +9,26 @@ public class Car {
     int noOfSeats;
 
 
-    public void drive(){
+    public Car start(){
         if(currentFuelInLiters == 0){
             System.out.println("Car is out of fuel");        
         }
         else if(currentFuelInLiters < 5){
             System.out.println("Car is low on fuel, please refuel soon");
-            currentFuelInLiters--;
+              
         }
         else{
-            System.out.println("Car is driving");
+            System.out.println("Car is starting ......");
             currentFuelInLiters--;
         }
+        return this;
+    }
+
+    public void drive(){
+        currentFuelInLiters--;
+        System.out.println("Car is driving");
+        
+        
         
     }
 
@@ -34,4 +42,4 @@ public class Car {
         return currentFuelInLiters;
     }
 
-}
+}  
