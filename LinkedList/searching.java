@@ -1,4 +1,4 @@
-public class deletion {
+public class searching {
     public static class Node{
         int data;
         Node next;
@@ -60,59 +60,47 @@ public class deletion {
         System.out.println("null");
     }
 
+    // Iterative search for a key in the linked list
+    public int iterSearch(int key){
+        Node temp = head;
+        int index=0;
 
-
-
-    public int removeFirst(){
-
-        if(size == 0){
-            System.out.println("List is empty");
-            return Integer.MIN_VALUE;
-
+        while(temp != null){
+            if(temp.data == key){
+                return index;
+            }
+            temp = temp.next;
+            index++;
         }
-        else if(size == 1){
-            int val = head.data;
-            head = tail = null;
-            size=0;
-            return val;
-        }
-        
-        int val = head.data;
-        head = head.next;
-        size--;
-        return val;
+
+        return -1;
     }
 
-    public int removeLast(){
-        if(size == 0){
-            System.out.println("List is empty");
-            return Integer.MIN_VALUE;
 
+    // Recursive search for a key in the linked list
+        public int helper(Node head,int key){
+        if(head == null){
+            return -1;
         }
-        else if(size == 1){
-            int val = head.data;
-            head = tail = null;
-            size = 0;
-            return val;
+        if(head.data == key){
+            return 0;
         }
-        // prev node : i=size-2
-        Node prev = head;
-        for(int i=0 ; i<size-2; i++){
-            prev = prev.next;
+        int index = helper(head.next,key);
+        if(index == -1){
+            return -1;
         }
-        int val = prev.next.data;
-        prev.next = null;
-        tail = prev;
-        size--;
-        return val;
+        return index + 1;
     }
+
+    public int recSearch(int key){
+        return helper(head,key);
+    }
+
 
     
 
-
-
     public static void main(String[] args) {
-        deletion ll = new deletion();
+        searching ll = new searching();
         ll.print();
         ll.addFirst(20);
         ll.addFirst(10); 
@@ -120,12 +108,10 @@ public class deletion {
         ll.addLast(50);
         ll.add(2,30);
         ll.print();
-        System.out.println("Size of the list: "+ll.size);
-        ll.removeFirst(); 
-        ll.print(); 
-        ll.removeLast();
-        ll.print();
-        System.out.println("Size of the list: "+ll.size);
-
+        System.out.println("Searching for 30: " + ll.iterSearch(30));
+        System.out.println("Searching for 100: " + ll.iterSearch(100));
+        System.out.println("Searching for 30: " + ll.iterSearch(30));
+        System.out.println("Searching for 100: " + ll.iterSearch(100));
     }
+    
 }

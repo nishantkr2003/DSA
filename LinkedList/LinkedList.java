@@ -136,6 +136,43 @@ public class LinkedList {
         size--;
         return val;
     }
+
+
+
+    public int iterSearch(int key){
+        Node temp = head;
+        int index=0;
+
+        while(temp != null){
+            if(temp.data == key){
+                return index;
+            }
+            temp = temp.next;
+            index++;
+        }
+
+        return -1;
+
+    }
+
+
+    public int helper(Node head,int key){
+        if(head == null){
+            return -1;
+        }
+        if(head.data == key){
+            return 0;
+        }
+        int index = helper(head.next,key);
+        if(index == -1){
+            return -1;
+        }
+        return index + 1;
+    }
+
+    public int recSearch(int key){
+        return helper(head,key);
+    }
     public static void main(String[] args) {
         
         LinkedList ll = new LinkedList();
@@ -146,12 +183,19 @@ public class LinkedList {
         ll.adsLast(50);
         ll.add(2,30);
         ll.print();
-        System.out.println("Size of the list: "+ll.size);
-        ll.removeFirst(); 
-        ll.print(); 
-        ll.removeLast();
-        ll.print();
-        System.out.println("Size of the list: "+ll.size);
+        // System.out.println("Size of the list: "+ll.size);
+        // ll.removeFirst(); 
+        // ll.print(); 
+        // ll.removeLast();
+        // ll.print();
+        // System.out.println("Size of the list: "+ll.size);
+
+        System.out.println("Searching for 30: " + ll.iterSearch(30));
+        System.out.println("Searching for 100: " + ll.iterSearch(100));
+
+        System.out.println("Searching for 20: " + ll.recSearch(20));
+        System.out.println("Searching for 200: " + ll.recSearch(200));
+    
 
 
     }
