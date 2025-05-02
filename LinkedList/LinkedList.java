@@ -20,11 +20,14 @@ public class LinkedList {
     public static Node head; 
     // Tail of the linked list
     public static Node tail;
+    //size of the linked list
+    public static int size;
     
 
     public void addFirst(int data){
          //Step - 1: create a new node
          Node newNode = new Node(data);
+         size++;
          //Step - 2: check if the list is empty
          if(head == null){
             head = tail = newNode;
@@ -40,6 +43,7 @@ public class LinkedList {
     public void adsLast(int data){
         // Step -1: create new Node
         Node newNode = new Node(data);
+        size++;
         // Step -2: check if the list is empty
         if(head == null){
             head = tail = newNode;
@@ -58,6 +62,7 @@ public class LinkedList {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i=0;
         while(i<index-1){
@@ -92,6 +97,7 @@ public class LinkedList {
         ll.adsLast(40);
         ll.adsLast(50);
         ll.add(2,30);
+        System.out.println("Size of the list: " + size);
         ll.print(); 
     }
 }
