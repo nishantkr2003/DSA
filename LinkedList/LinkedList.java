@@ -88,6 +88,54 @@ public class LinkedList {
         System.out.println("null");
 
     }
+
+
+
+
+
+    public int removeFirst(){
+
+        if(size == 0){
+            System.out.println("List is empty");
+            return Integer.MIN_VALUE;
+
+        }
+        else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size=0;
+            return val;
+        }
+        
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+    }
+
+    public int removeLast(){
+        if(size == 0){
+            System.out.println("List is empty");
+            return Integer.MIN_VALUE;
+
+        }
+        else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        // prev node : i=size-2
+        Node prev = head;
+        for(int i=0 ; i<size-2; i++){
+            prev = prev.next;
+        }
+        int val = prev.next.data;
+        prev.next = null;
+        tail = prev;
+        size--;
+        return val;
+    }
     public static void main(String[] args) {
         
         LinkedList ll = new LinkedList();
@@ -97,7 +145,14 @@ public class LinkedList {
         ll.adsLast(40);
         ll.adsLast(50);
         ll.add(2,30);
-        System.out.println("Size of the list: " + ll.size);
+        System.out.println("Size of the list: "+ll.size);
+       ll.removeFirst();
+       
         ll.print(); 
+        ll.removeLast();
+        ll.print();
+        System.out.println("Si + ze of the list: "+ll.size);
+
+
     }
 }
