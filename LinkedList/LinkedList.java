@@ -97,7 +97,7 @@ public class LinkedList {
         ll.adsLast(40);
         ll.adsLast(50);
         ll.add(2,30);
-        System.out.println("Size of the list: " + size);
+        System.out.println("Size of the list: " + ll.size);
         ll.print(); 
     }
 }
