@@ -1,5 +1,5 @@
 public class Insertion {
-    // Node class to represent each element in the linked list
+    
     public static class Node{
         int data;
         Node next;
