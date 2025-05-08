@@ -1,4 +1,4 @@
-  sum of arr using recursion
+//sum of arr using recursion
 public class sum {
     
     public static void main(String[] args) {
