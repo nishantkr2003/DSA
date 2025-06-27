@@ -2,7 +2,7 @@
 
 public class twoparts {
     public static void main(String[] args) {
-        String s = "2025";
+        String s = "1234";
         int n = s.length();
         if (n % 2 != 0) {
             System.out.println("Number must have even digits");
