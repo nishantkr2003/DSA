@@ -1,17 +1,19 @@
-public class upper {
+public class Upper {
     public static void main(String[] args) {
         String s = "java PROGRAMMING language";
         String[] words = s.split(" ");
         String result = "";
 
-        for (String word : words) {
-            if (!word.isEmpty()) {
-                String first = word.substring(0, 1).toUpperCase();
-                String rest = word.substring(1).toLowerCase();
-                result += first + rest + " ";
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            // Check if the word is not empty
+            if (word.length() > 0) {
+            
+                String capitalWord = Character.toUpperCase(word.charAt(0)) + word.substring(1).toLowerCase();
+                result = result + capitalWord + " ";
             }
         }
-
-        System.out.println(result.trim());
+        result = result.trim();
+        System.out.println(result);
     }
 }
