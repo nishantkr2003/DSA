@@ -7,7 +7,7 @@ public class ActivitySelection {
        
         int[][] activities = new int[N][2];
 
-        // Read input as pairs
+        // Read input as pair
         for (int i = 0; i < N; i++) {
             activities[i][0] = sc.nextInt(); // start time
             activities[i][1] = sc.nextInt(); // end time
