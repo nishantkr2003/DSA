@@ -1,6 +1,6 @@
-import java.util.*;
+package Hashing;
 
-import javax.annotation.processing.SupportedSourceVersion;
+import java.util.*;
 
 
 public class hashMapOperation {
