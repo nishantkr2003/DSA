@@ -3,20 +3,21 @@ import java.util.*;
 
 public class hashMapCode {
     static class HashMap<K, V> {
+
         private class Node{
             K key;
             V value;
-
             Node(K key, V value) {
                 this.key = key;
                 this.value = value;
             }
         }
+
+
         private int n;   // n
         private int N;   // N
         private LinkedList<Node>[] buckets; //N=buckets.length
 
-       // private Map<K, V> map;
 
        @SuppressWarnings("unchecked")
         public HashMap() {
@@ -27,10 +28,12 @@ public class hashMapCode {
             }
         }
 
+
         private int hashFunction(K key){
             int hc = key.hashCode();
             return Math.abs(hc)% N; // Ensure non-negative index
         }
+
 
         private int SerachInLL(K key,int bi){
             LinkedList<Node> ll = buckets[bi];
@@ -44,6 +47,7 @@ public class hashMapCode {
             }
             return -1; // Not found
         }
+
 
         @SuppressWarnings("unchecked")
         private void rehash(){
@@ -66,6 +70,7 @@ public class hashMapCode {
              }
         }
 
+
         public void put(K key, V value) {
             int bi = hashFunction(key);
             int di = SerachInLL(key,bi); // valid,-1
@@ -85,6 +90,7 @@ public class hashMapCode {
             }
         }
 
+
         public V get(K key) {
             int bi = hashFunction(key);
             int di = SerachInLL(key,bi); // valid,-1
@@ -98,6 +104,7 @@ public class hashMapCode {
             }
         }
 
+
         public boolean containsKey(K key) {
             int bi = hashFunction(key);
             int di = SerachInLL(key,bi); // valid,-1
@@ -109,6 +116,7 @@ public class hashMapCode {
                return false; 
             }
         }
+
 
         public V remove(K key) {
             int bi = hashFunction(key);
@@ -124,10 +132,9 @@ public class hashMapCode {
             } 
         }
 
-        public int size() {
-            return n; // Return the number of elements
 
-            
+        public int size() {
+            return n; // Return the number of elements   
         }
 
         public ArrayList<K> keySet() {
@@ -140,6 +147,7 @@ public class hashMapCode {
             }
             return keys; // Return the list of keys
         }
+        
 
         public boolean isEmpty() {
             return n == 0; // Check if the map is empty
