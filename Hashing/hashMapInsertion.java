@@ -5,7 +5,6 @@ import java.util.*;
 public class hashMapInsertion{
     public static void main(String[] args) {
         // Create a HashMap
-
         HashMap<String, Integer> map = new HashMap<>();
 
         map.put("India",1);
