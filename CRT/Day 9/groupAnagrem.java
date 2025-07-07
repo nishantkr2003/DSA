@@ -1,7 +1,3 @@
-
-
-//question: check anagram
-
 import java.util.*;
 
 public class groupAnagrem 
