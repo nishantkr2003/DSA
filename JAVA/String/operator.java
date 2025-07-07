@@ -1,7 +1,5 @@
 package String;
-
 import java.util.ArrayList;
-
 public class operator {
     public static void main(String[] args) {
         

@@ -1,4 +1,6 @@
-public class Prettyprint{
+package String;
+
+public class PrettyPrint{
     
 
     public static void main(String[] args) {

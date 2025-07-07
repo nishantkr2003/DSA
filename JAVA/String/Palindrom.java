@@ -1,3 +1,5 @@
+package String;
+
 public class Palindrom {
     public static void main(String[] args) {
         String str = "madam";

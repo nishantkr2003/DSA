@@ -4,7 +4,6 @@
 
 // This program finds the largest string in an array of strings using compareTo method.
 package String;
-import java.util.*;
 public class compareTo {
     public static void main(String[] args) {
         String[] s = {"apple", "banana", "cherry","mango"};
