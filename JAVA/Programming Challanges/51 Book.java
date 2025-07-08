@@ -1,3 +1,16 @@
+/* 
+Create a Book class for a library system.
+ • Instance variables: title, author, isbn.
+ • Static variable: totalBooks, a counter for the total number of book 
+instances.
+ • Instance methods: borrowBook(), returnBook().
+ • Static method: getTotalBooks(), to get the total number of books in the 
+library 
+ */
+
+
+
+
 class Book {
     static int totalNoOfBooks;
     String author;
