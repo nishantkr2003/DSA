@@ -7,9 +7,11 @@ public class ArrayListStack {
     public static boolean isEmpty(){
         return list.size() ==0;
     }
+
     public static void push(int data){
         list.add(data);
     }
+
     public static int pop(){
         if(list.isEmpty()){
             System.out.println("list is empty");
@@ -19,6 +21,7 @@ public class ArrayListStack {
 
         return top;
     }
+    
     public static int peek(){
         if(list.isEmpty()){
             System.out.println("list is empty");
