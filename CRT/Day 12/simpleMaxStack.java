@@ -1,5 +1,4 @@
 import java.util.Stack;
-
 public class simpleMaxStack {
     public static void main(String[] args) {
         Stack<Integer> mainStack = new Stack<>();
@@ -49,4 +48,7 @@ public class simpleMaxStack {
             return -1;
         }
     }
+
+    
 }
+
