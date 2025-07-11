@@ -1,0 +1,55 @@
+// 1.create a class Makequeue
+// 2.create attributes
+//    2.1inputStack
+//    2.2outputStack
+// 3.createconstructer
+
+//    3.1makeQueue()
+//    3.2ipputstack = new stack[]
+//    3.3outputStack = new stack[]
+
+// 4.create methods
+//     4.1add(int x)
+//     4.2remove()
+
+    
+
+
+import java.util.Stack;
+import java.util.Iterator;
+
+class MakeQueue {
+    public Stack<Integer> inputStack;
+    public Stack<Integer> outputStack;
+
+    public MakeQueue() {
+        inputStack = new Stack<>();
+        outputStack = new Stack<>();
+    }
+
+    public void add(int x) {
+        inputStack.push(x);
+    }
+
+    public int remove() {
+        if (outputStack.isEmpty()) {
+            while (!inputStack.isEmpty()) {
+                outputStack.push(inputStack.pop());
+            }
+        }
+
+        if (outputStack.isEmpty()) {
+            throw new RuntimeException("Queue is empty");
+        }
+
+        return outputStack.pop();
+    }
+
+    public boolean isEmpty() {
+        return inputStack.isEmpty() && outputStack.isEmpty();
+    }
+
+
+    System.out.println();
+    
+}
