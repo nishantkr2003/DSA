@@ -1,7 +1,6 @@
 
+
 public class LinkedListStack {
-
-
     public static void main(String[] args) {
         ArrayListStack s  = new ArrayListStack();
         s.push(10);
