@@ -14,3 +14,5 @@ public class Binary {
         System.out.println("Binary : " + binary.toString());
     }
 }
+
+
