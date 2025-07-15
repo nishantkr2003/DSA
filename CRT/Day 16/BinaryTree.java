@@ -1,4 +1,3 @@
-
 class TreeNode{
     int value;
     TreeNode left;
@@ -8,6 +7,7 @@ class TreeNode{
         value = v;
     }
 }
+
 
 public class BinaryTree{
     public void inOrder(TreeNode root){
@@ -19,7 +19,7 @@ public class BinaryTree{
         System.out.print(root.value + " ");
     }
 
-        public void preOrder(TreeNode root) {
+    public void preOrder(TreeNode root) {
         if (root == null) return;
         System.out.print(root.value + " ");
         preOrder(root.left);
@@ -33,7 +33,7 @@ public class BinaryTree{
         System.out.print(root.value + " ");
     }
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
