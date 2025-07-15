@@ -10,6 +10,7 @@ class TreeNode{
 
 
 public class BinaryTree{
+    
     public void inOrder(TreeNode root){
         if(root == null){
             return;
