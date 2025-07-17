@@ -19,13 +19,14 @@ public class BinaryTree{
         s1.push(root);
 
         while(!s1.isEmpty() || !s2.isEmpty()){
+
             while(!s1.isEmpty()){
                 TreeNode current = s1.pop();
                 System.out.print(current.val + " ");
                 if(current.left != null){
                     s2.push(current.left);
                 }
-                if(current.left!=null){
+                if(current.right!=null){
                     s2.push(current.right);
                 }
             }
@@ -36,17 +37,25 @@ public class BinaryTree{
             while(!s2.isEmpty()){
                 TreeNode current = s2.pop();
                 System.out.print(current.val + " ");
-                if(current.left!=null){
-                    s1.push(current.right);
-                }
                 if(current.left != null){
                     s1.push(current.left);
-                }  
+                }
+                if(current.right!=null){
+                    s1.push(current.right);
+                }
+                  
             }
             if(!s2.isEmpty()){
                 System.out.println();
             }
         }   
+    }
+
+    public int height(TreeNode root) {
+        if (root == null) return -1; 
+        int leftHeight = height(root.left);
+        int rightHeight = height(root.right);
+        return Math.max(leftHeight, rightHeight) + 1;
     }
 
 
@@ -62,6 +71,8 @@ public class BinaryTree{
 
         BinaryTree tree = new BinaryTree();
         tree.ziczagTraversal(root);
+        System.out.println();
+        System.out.println("height:"+tree.height(root));
 
     }
 }
