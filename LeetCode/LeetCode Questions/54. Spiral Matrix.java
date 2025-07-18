@@ -21,6 +21,7 @@ class Solution {
         int right = cols - 1;
 
         while (left <= right && top <= bottom) {
+            //upper row print
             for (int i = left; i <= right; i++) {
                 result.add(matrix[top][i]);
             }
