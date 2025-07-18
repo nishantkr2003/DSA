@@ -33,6 +33,7 @@ class Solution {
             }
             right--;
 
+            // Bottom row print
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     result.add(matrix[bottom][i]);
