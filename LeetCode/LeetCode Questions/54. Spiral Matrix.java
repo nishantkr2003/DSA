@@ -41,6 +41,7 @@ class Solution {
                 bottom--;
             }
 
+            // left col print
             if (left <= right) {
                 for (int r = bottom; r >= top; r--) {
                     result.add(matrix[r][left]);
