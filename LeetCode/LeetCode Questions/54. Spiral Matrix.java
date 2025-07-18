@@ -26,7 +26,8 @@ class Solution {
                 result.add(matrix[top][i]);
             }
             top++;
-
+            
+            //right column print
             for (int i = top; i <= bottom; i++) {
                 result.add(matrix[i][right]);
             }
