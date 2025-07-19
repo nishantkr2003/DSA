@@ -15,7 +15,7 @@ class Solution {
             }
         }
 
-        //Reverse
+        //Reverse the array
         for(int i=0;i<n;i++){
             int left = 0;
             int right = n-1;
