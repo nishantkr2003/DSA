@@ -5,7 +5,7 @@ public class NumberOfIslands {
         int cols = grid[0].length;
         boolean[][] visited = new boolean[rows][cols];
         int count = 0;
-        
+                                           
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (grid[i][j] == '1' && !visited[i][j]) {
