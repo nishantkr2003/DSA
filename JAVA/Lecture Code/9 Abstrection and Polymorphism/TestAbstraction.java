@@ -9,3 +9,7 @@ public class TestAbstraction {
 
     }
 }
+
+
+//javac Transport.java  Vehicle.java Car.java TestAbstraction.java
+// java TestAbstraction
