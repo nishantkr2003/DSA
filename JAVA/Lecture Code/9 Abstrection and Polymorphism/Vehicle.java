@@ -17,9 +17,4 @@ public abstract class Vehicle {
     public void commute(){
         System.out.println("going");
     }
-
-    
-
-    
-
 }
