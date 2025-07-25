@@ -12,4 +12,11 @@ public class Car extends Vehicle{
        System.out.println("Vroom");
     }
 
+    @Override
+    public void getSetGo() {
+       System.out.println("can de decleared in vehicle or in Car");
+    }
+
+    
+
 }
