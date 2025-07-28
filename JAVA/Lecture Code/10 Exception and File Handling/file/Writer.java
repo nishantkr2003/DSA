@@ -8,7 +8,7 @@ public class Writer {
         try (FileWriter writer = new FileWriter(fileName)) {
             writer.write("This is the best Java course.\n");
             for (int i = 0; i < 10000; i++) {
-                writer.write('*');
+                writer.write(i+",");
             }
 
             writer.flush();
