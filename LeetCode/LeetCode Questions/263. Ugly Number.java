@@ -1,6 +1,6 @@
 //  https://leetcode.com/problems/ugly-number/description/
 
-
+//263
 class Solution {
     public boolean isUgly(int n) {
         if(n<=0) return false;
