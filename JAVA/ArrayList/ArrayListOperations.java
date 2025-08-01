@@ -10,6 +10,7 @@ public class ArrayListOperations {
         list.add(3);
         list.add(4);
         list.add(5);
+        list.add(3,25);
         System.out.println(list);
 
         // Get operation -- O(1)
@@ -27,5 +28,8 @@ public class ArrayListOperations {
         //contains -- O(n)
         System.out.println(list.contains(1));
         System.out.println(list.contains(11));
+
+        //size() -- O(1)
+        System.out.println("Size of the list: " + list.size());
     }
 }
