@@ -12,6 +12,8 @@ public class Reverse {
         list.add(5);
         System.out.println("Size of list : " + list.size());
 
+
+        //Reverse ArrayList  -- O(n)
         for(int i=list.size()-1;i>=0;i--){
             System.out.print(list.get(i) + " ");
         }
