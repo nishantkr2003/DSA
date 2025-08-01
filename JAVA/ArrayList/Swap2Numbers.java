@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Swap2Numbers {
 
@@ -17,8 +18,14 @@ public class Swap2Numbers {
 
         int idx1 = 1;
         int idx2 = 3;
+
+
         System.out.println(list);
-        swap(list, idx1, idx2);
+        // swap(list, idx1, idx2);
+        // System.out.println(list);
+
+        Collections.sort(list);
         System.out.println(list);
+
     }
 }
