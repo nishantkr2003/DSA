@@ -24,7 +24,9 @@ public class Swap2Numbers {
         // swap(list, idx1, idx2);
         // System.out.println(list);
 
-        Collections.sort(list);
+        Collections.sort(list); // ascending order
+        System.out.println(list);
+        Collections.sort(list,Collections.reverseOrder()); // descending order
         System.out.println(list);
 
     }
