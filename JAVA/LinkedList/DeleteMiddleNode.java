@@ -11,6 +11,8 @@ public class DeleteMiddleNode {
     public static Node tail;
     public static int size;
 
+
+    
     public Node deleteMiddleNode(Node head){
         Node slow = head;
         Node fast = head;
@@ -25,6 +27,10 @@ public class DeleteMiddleNode {
 
         return head;
     }
+
+
+
+
     public void addFirst(int data){
         Node newNode = new Node(data);
         if(head == null){
