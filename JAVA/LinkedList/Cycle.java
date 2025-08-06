@@ -49,7 +49,7 @@ public class Cycle {
         }
 
         // find meeting point
-        slow = head;
+        slow = head;   
         Node prev = null;
     
         while(slow != fast){
