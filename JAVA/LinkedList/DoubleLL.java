@@ -70,6 +70,7 @@ public class DoubleLL {
         System.out.println(size);
 
         dll.removeFirst();
+        dll.print();
         
     }
 }
