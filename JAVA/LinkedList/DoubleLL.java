@@ -72,5 +72,6 @@ public class DoubleLL {
         dll.removeFirst();
         dll.print();
         System.out.println(size);
+        System.out.println();
     }
 }
